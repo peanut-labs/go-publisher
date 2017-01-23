@@ -73,3 +73,9 @@ func HandleNotification(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "%d", peanutlabs.NotificationResponseSuccess)
 }
 ```
+
+
+### Status
+This package only supports Reward Center at the moment but the newer versions will support other PL integrations as well.
+
+Contact: publishers@peanutlabs.com
