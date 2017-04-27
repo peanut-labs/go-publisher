@@ -129,7 +129,7 @@ func TestPublisher_GenerateRewardCenterURL(t *testing.T) {
 }
 
 func TestPublisher_ProcessRewardNotification(t *testing.T) {
-	query := `cmd=transactionComplete&userId=saad-1-bb753c1132&amt=1.0&offerInvitationId=123&status=C&oidHash=4297f44b13955235245b2497399d7a93&currencyAmt=50&transactionId=456&endUserId=saad&offerTitle=Survey&useragent=Peanut+Labs+Media&currencyName=Pointies&offerType=Survey&txnHash=250cf8b51c773f3f8dc8b4be867a9a02&program=`
+	query := `cmd=transactionComplete&userId=saad-1-bb753c1132&amt=1.0&offerInvitationId=123&status=C&oidHash=4297f44b13955235245b2497399d7a93&currencyAmt=50&transactionId=456&endUserId=saad&offerTitle=Survey&useragent=Peanut+Labs+Media&currencyName=Pointies&offerType=Survey&txnHash=d964173dc44da83eeafa3aebbee9a1a0&program=`
 	url := fmt.Sprintf("/callback?%s", query)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {

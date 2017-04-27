@@ -159,7 +159,7 @@ func New(appID int, secKey string, txnKey string) (*Publisher, error) {
 	if len(txnKey) == 0 {
 		return nil, errInvalidTxnKey
 	}
-	return &Publisher{ApplicationID: appID, SecurityKey: secKey}, nil
+	return &Publisher{ApplicationID: appID, SecurityKey: secKey, TransactionKey: txnKey}, nil
 }
 
 //helper methods
